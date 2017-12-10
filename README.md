@@ -31,7 +31,7 @@ The response sent by the service on successful requests follows the example belo
 By default, the api gateway will look for an authorization header on secured endpoints. All endpoints are secured by default
 when the gateway is active. To disable the security feature use the property `app.gatewayEnabled=false`.
 
-The required header is 'Authorization: Bearer <sessionKey>', where the session key can be requested through the register 
+The required header is `Authorization: Bearer <sessionKey>`, where the session key can be requested through the register 
 rest service.
 
 If a token is missing, expired or invalid, a `WWW-Authenticate` header is returned, indicating where can be obtained a new token.
@@ -78,3 +78,5 @@ empty, a `429 TOO MANY REQUESTS` response will be sent, and the request will be 
 
 To run the demo, either build the project and run the jar with `java -jar` or from maven with goal `mvn spring-boot:run`.
 The demo has a self contained tomcat server and does not need to be deployed inside another.
+
+A postman collection file `postman.json` is provided with request examples.
