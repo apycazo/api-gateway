@@ -1,0 +1,97 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "3684598b-50fe-7bac-384d-a31ac3033e9c",
+			"name": "api-gateway",
+			"description": "",
+			"order": [
+				"2c308103-2cb3-901c-2ba8-9a44f129ccc9",
+				"6b45a2c4-e841-954b-e45a-d76ca013a54a"
+			],
+			"folders": [],
+			"folders_order": [],
+			"timestamp": 1512929254844,
+			"synced": false,
+			"remote_id": 0,
+			"owner": 0,
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1512929254844,
+			"updatedAt": 1512929350825,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
+			"requests": [
+				{
+					"id": "2c308103-2cb3-901c-2ba8-9a44f129ccc9",
+					"headers": "Authorization: Basic bWFuYWdlcjptNG40ZzNy\n",
+					"headerData": [
+						{
+							"key": "Authorization",
+							"value": "Basic bWFuYWdlcjptNG40ZzNy",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://localhost:8080/register",
+					"queryParams": [],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "3684598b-50fe-7bac-384d-a31ac3033e9c",
+					"data": null,
+					"dataMode": "params",
+					"name": "Request a session token",
+					"description": "Sends a request to the API for a new session key, using default authorization headers.",
+					"descriptionFormat": "html",
+					"time": 1512929315682,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "6b45a2c4-e841-954b-e45a-d76ca013a54a",
+					"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYW5hZ2VyIiwiZXhwIjoxNTEyOTI5NTk1fQ.OgGkdUkBqFN8zZ_eSVe62-cErypleG9LfzKTiJecfsytyOnyXozgpJajyQt0LbtSBTbXc3G4BvYPOqSDYiFdKw\n",
+					"headerData": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYW5hZ2VyIiwiZXhwIjoxNTEyOTI5NTk1fQ.OgGkdUkBqFN8zZ_eSVe62-cErypleG9LfzKTiJecfsytyOnyXozgpJajyQt0LbtSBTbXc3G4BvYPOqSDYiFdKw",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://localhost:8080/secured",
+					"queryParams": [],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3684598b-50fe-7bac-384d-a31ac3033e9c",
+					"data": null,
+					"dataMode": "params",
+					"name": "Request to secure endpoint",
+					"description": "Request access to a secured endpoint. Note that the header value must be updated with a valid session key. Authorization value must follow the pattern \"Bearer {sessionKey}\"",
+					"descriptionFormat": "html",
+					"time": 1512929350774,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				}
+			]
+		}
+	],
+	"environments": [],
+	"headerPresets": [],
+	"globals": []
+}

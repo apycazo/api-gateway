@@ -1,0 +1,23 @@
+spring.application.name: api-gateway-demo
+server.port: 8080
+
+app:
+  registerEnabled: true
+  rateLimiterEnabled: true
+  # bucket capacity reduced for demo.
+  bucketCapacity: 10
+  # bucket spawn time extended for demo (one new token per second).
+  tokenSpawnTimeInMillis: 1000
+  authenticationMapping: /register
+  authenticationEndpoint: http://localhost:8080/register
+  tokenTimeToLiveInSeconds: 300
+  secret: B^#vdaD$ZEM8j<>
+  keyAlgorithm: AES
+  publicEndpoints:
+    - /register
+    - /public
+
+login.users:
+  admin: 1234
+  manager: m4n4g3r
+  guest: guest
